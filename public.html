@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,600;0,700;1,100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">    
+<title>HTML-CSS Website</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="public.html"><img src ="eduford_img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    
+                    <li><a href="public.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">Course</a></li>
+                    <li><a href="about.html">Blog</a></li>
+                   
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita minus quis autem non vitae modi, consequuntur mollitia <br>ipsum doloremque dolorem natus ducimus enim voluptatum nesciunt nemo nostrum quibusdam velit voluptates!</p>
+      <a href="" class="hero-btn">Visit us to know More</a>
+    </div>
+    </section>
+
+    <section class="course">
+  <h1>Courses we Offer</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quisquam, quae.</p>
+   <div class="row">
+    <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tenetur
+         aut et beatae inventore quasi, repudiandae doloremque culpa ducimus libero quam corporis ratione debitis quaerat facere sed, suscipit possimus voluptas.</p>
+    </div>
+    <div class="course-col">
+        <h3>Degreee</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tenetur
+         aut et beatae inventore quasi, repudiandae doloremque culpa ducimus libero quam corporis ratione debitis quaerat facere sed, suscipit possimus voluptas.</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tenetur
+         aut et beatae inventore quasi, repudiandae doloremque culpa ducimus libero quam corporis ratione debitis quaerat facere sed, suscipit possimus voluptas.</p>
+    </div>
+   
+   </div>   
+</section>
+
+<section class="campus">
+<h1>Our Global Campus</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quae.</p>
+<div class="row">
+    <div class="campus-col">
+        <img src="eduford_img/london.png">
+        <div class="layer">
+            <h3>LONDON</h3>
+        </div>
+    </div>
+    <div class="campus-col">
+        <img src="eduford_img/newyork.png">
+        <div class="layer">
+            <h3>NEW YORK</h3>
+        </div>
+    </div>
+    <div class="campus-col">
+        <img src="eduford_img/washington.png">
+        <div class="layer">
+            <h3>WASHINGTON</h3>
+        </div>
+    </div>
+</div>
+
+</section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html>
